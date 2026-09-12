@@ -1,21 +1,247 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LEARN WITH FLOW — World-Class Free EdTech Platform</title>
-    <meta name="description" content="World-class EdTech platform led by Founder & CEO Muhammad Talha, featuring a 1,000,000 course catalog, YouTube playlist integration, 80% assessment gating, and verifiable Coursera-style certificates." />
-    <meta property="og:title" content="LEARN WITH FLOW — World-Class Free EdTech Platform" />
-    <meta property="og:description" content="World-class EdTech platform led by Founder & CEO Muhammad Talha, featuring a 1,000,000 course catalog, YouTube playlist integration, 80% assessment gating, and verifiable Coursera-style certificates." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-[#0056D2]">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTH CARE WITH TALHA — Premium Digital Health Ecosystem</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Premium Card Glow */
+        .health-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .health-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(21, 128, 61, 0.1), 0 10px 10px -5px rgba(21, 128, 61, 0.04); }
+    </style>
+</head>
+<body class="bg-white text-slate-900 selection:bg-emerald-500 selection:text-white">
 
+    <header class="bg-slate-950 text-slate-200 py-2 px-6 text-xs font-mono border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span>Global Digital Health Sovereignty Initiative</span>
+            <div class="flex gap-4 text-emerald-400">
+                <span><i class="fa-solid fa-shield-halved"></i> HIPAA Compliant</span>
+                <span><i class="fa-solid fa-user-lock"></i> Encrypted Data</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-tr from-emerald-600 to-emerald-400 p-3 rounded-2xl shadow-lg shadow-emerald-500/10 text-white">
+                    <i class="fa-solid fa-heart-pulse text-xl font-black"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-tighter text-slate-950">HEALTH CARE WITH <span class="text-emerald-600">TALHA</span></span>
+                    <span class="block text-[10px] font-mono text-slate-500 uppercase tracking-widest">Sovereign Digital Health Platform</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+                <a href="#vitals" class="hover:text-emerald-600 transition">My Vitals</a>
+                <a href="#services" class="hover:text-emerald-600 transition">Care Services</a>
+                <a href="#telehealth" class="hover:text-emerald-600 transition">Telehealth</a>
+                <a href="#reports" class="hover:text-emerald-600 transition">Health Reports</a>
+            </div>
+
+            <button onclick="openBookingModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl text-xs uppercase tracking-wider cursor-pointer transition flex items-center gap-2 shadow-md shadow-emerald-600/20">
+                <i class="fa-solid fa-calendar-check"></i> Book Consultation
+            </button>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-16 md:py-24 space-y-24">
+        <section class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="inline-block bg-emerald-50 text-emerald-700 px-4 py-1 rounded-full text-xs font-bold font-mono border border-emerald-100">Sovereign Digital Health - Powered by Talha</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-950 leading-tight">
+                    Your Personal <span class="text-emerald-600">Health Ecosystem</span>, <br>Managed by Talha.
+                </h1>
+                <p class="text-slate-600 text-lg max-w-xl leading-relaxed">
+                    Take control of your well-being. Track vitals, consult specialists, and access comprehensive care services securely on HEALTH CARE WITH TALHA.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <button onclick="scrollToSection('vitals')" class="bg-slate-950 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-2xl text-sm uppercase tracking-wider cursor-pointer transition shadow-xl flex items-center gap-2">
+                        <i class="fa-solid fa-chart-line"></i> Start Monitoring
+                    </button>
+                    <button onclick="scrollToSection('services')" class="bg-white hover:bg-slate-100 border border-slate-200 text-slate-900 font-bold px-8 py-4 rounded-2xl text-sm uppercase tracking-wider cursor-pointer transition flex items-center gap-2">
+                        Explore Care <i class="fa-solid fa-arrow-right ml-2 text-emerald-600"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl aspect-[5/4] flex items-center justify-center shadow-inner">
+                <div class="grid grid-cols-2 gap-6 w-full">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 space-y-2 shadow-xl shadow-slate-100/50">
+                        <i class="fa-solid fa-heartbeat text-3xl text-rose-500"></i>
+                        <p class="text-xs text-slate-500 font-medium">Avg. Blood Pressure</p>
+                        <p class="text-2xl font-black text-slate-950">120/80 <span class="text-sm font-medium text-slate-400">mmHg</span></p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-100 space-y-2 shadow-xl shadow-slate-100/50">
+                        <i class="fa-solid fa-tint text-3xl text-amber-500"></i>
+                        <p class="text-xs text-slate-500 font-medium">Blood Glucose</p>
+                        <p class="text-2xl font-black text-slate-950">98 <span class="text-sm font-medium text-slate-400">mg/dL</span></p>
+                    </div>
+                    <div class="col-span-2 bg-white p-6 rounded-2xl border border-slate-100 shadow-xl shadow-slate-100/50 flex items-center justify-between">
+                        <div class="space-y-1">
+                            <p class="text-sm text-slate-600 font-bold">Next Appointment with Specialist</p>
+                            <p class="text-xs font-mono text-emerald-600 font-bold">Consultation Portal Active</p>
+                        </div>
+                        <i class="fa-solid fa-video text-2xl text-emerald-500"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vitals" class="space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <h2 class="text-4xl font-extrabold text-slate-950 tracking-tight">Centralized Vital Monitoring</h2>
+                <p class="text-lg text-slate-600">Log, track, and analyze your essential health data. Empowering data-driven decisions for your care team.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white border border-slate-100 p-8 rounded-3xl space-y-5 health-card shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-rose-50 text-rose-600 rounded-2xl flex items-center justify-center text-xl border border-rose-100">
+                            <i class="fa-solid fa-heartbeat"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-950">Blood Pressure</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">Monitor your systolic and diastolic readings. Track trends over time to manage hypertension or hypotension effectively.</p>
+                    <div class="flex gap-3 items-end bg-slate-50 p-5 rounded-xl border border-slate-100">
+                        <input type="number" id="bp-systolic" placeholder="Systolic" class="w-1/2 bg-white border border-slate-200 px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                        <input type="number" id="bp-diastolic" placeholder="Diastolic" class="w-1/2 bg-white border border-slate-200 px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                        <button onclick="logBP()" class="bg-slate-900 hover:bg-slate-700 text-white p-3 rounded-lg cursor-pointer"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div id="bp-result" class="text-xs font-bold text-emerald-600"></div>
+                </div>
+
+                <div class="bg-white border border-slate-100 p-8 rounded-3xl space-y-5 health-card shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-xl border border-amber-100">
+                            <i class="fa-solid fa-tint"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-950">Blood Sugar</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">Keep a detailed log of your glucose levels (fasting, postprandial). Crucial for diabetes management and metabolic health.</p>
+                    <div class="flex gap-3 items-end bg-slate-50 p-5 rounded-xl border border-slate-100">
+                        <input type="number" id="sugar-value" placeholder="mg/dL Value" class="flex-grow bg-white border border-slate-200 px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                        <button onclick="logSugar()" class="bg-slate-900 hover:bg-slate-700 text-white p-3 rounded-lg cursor-pointer"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div id="sugar-result" class="text-xs font-bold text-amber-600"></div>
+                </div>
+
+                <div class="bg-white border border-slate-100 p-8 rounded-3xl space-y-5 health-card shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center text-xl border border-sky-100">
+                            <i class="fa-solid fa-weight-scale"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-950">Weight & BMI</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">Track your body weight and calculate BMI to monitor fitness progress and overall metabolic status.</p>
+                    <div class="flex gap-3 items-end bg-slate-50 p-5 rounded-xl border border-slate-100">
+                        <input type="number" id="weight-value" placeholder="kg Value" class="flex-grow bg-white border border-slate-200 px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-emerald-500">
+                        <button onclick="logWeight()" class="bg-slate-900 hover:bg-slate-700 text-white p-3 rounded-lg cursor-pointer"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div id="weight-result" class="text-xs font-bold text-sky-600"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <h2 class="text-4xl font-extrabold text-slate-950 tracking-tight">360° Health & Care Services</h2>
+                <p class="text-lg text-slate-600">Beyond vitals: access a full spectrum of medical services designed for holistic well-being.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-slate-50 border border-slate-100 p-6 rounded-3xl space-y-3 text-center flex flex-col items-center health-card">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl text-emerald-600 shadow-lg shadow-emerald-500/5 border border-slate-100">
+                        <i class="fa-solid fa-user-md"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-950">Primary Care</h4>
+                    <p class="text-xs text-slate-600">General consultations, preventive care, and health screenings.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-6 rounded-3xl space-y-3 text-center flex flex-col items-center health-card">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl text-emerald-600 shadow-lg shadow-emerald-500/5 border border-slate-100">
+                        <i class="fa-solid fa-user-injured"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-950">Chronic Disease</h4>
+                    <p class="text-xs text-slate-600">Ongoing management plans for long-term health conditions.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-6 rounded-3xl space-y-3 text-center flex flex-col items-center health-card">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl text-emerald-600 shadow-lg shadow-emerald-500/5 border border-slate-100">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-950">Mental Health</h4>
+                    <p class="text-xs text-slate-600">Counseling, psychological support, and stress management.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 p-6 rounded-3xl space-y-3 text-center flex flex-col items-center health-card">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl text-emerald-600 shadow-lg shadow-emerald-500/5 border border-slate-100">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-950">Lab Diagnostics</h4>
+                    <p class="text-xs text-slate-600">Home sample collection and fast digital lab report delivery.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-100 py-12 bg-slate-50 text-center text-xs text-slate-500 mt-20">
+        <div class="max-w-7xl mx-auto px-6 space-y-4">
+            <p class="font-bold text-slate-800 text-sm">HEALTH CARE WITH TALHA</p>
+            <p>&copy; 2026 Sovereign Digital Health Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openBookingModal() {
+            alert("Consultation Booking portal initiated for HEALTH CARE WITH TALHA.");
+        }
+
+        function logBP() {
+            let sys = document.getElementById('bp-systolic').value;
+            let dia = document.getElementById('bp-diastolic').value;
+            let res = document.getElementById('bp-result');
+            if(!sys || !dia) {
+                alert("Please enter both systolic and diastolic values.");
+                return;
+            }
+            let status = "Normal";
+            if(sys > 140 || dia > 90) status = "High (Hypertension)";
+            else if(sys < 90 || dia < 60) status = "Low (Hypotension)";
+            res.innerHTML = `Logged: ${sys}/${dia} mmHg — Status: <b>${status}</b>`;
+        }
+
+        function logSugar() {
+            let val = document.getElementById('sugar-value').value;
+            let res = document.getElementById('sugar-result');
+            if(!val) {
+                alert("Please enter blood sugar value.");
+                return;
+            }
+            let status = "Normal";
+            if(val > 125) status = "High (Hyperglycemia / Diabetes range)";
+            else if(val < 70) status = "Low (Hypoglycemia)";
+            res.innerHTML = `Logged: ${val} mg/dL — Status: <b>${status}</b>`;
+        }
+
+        function logWeight() {
+            let val = document.getElementById('weight-value').value;
+            let res = document.getElementById('weight-result');
+            if(!val) {
+                alert("Please enter your weight.");
+                return;
+            }
+            res.innerHTML = `Logged: ${val} kg successfully.`;
+        }
+    </script>
+</body>
+</html>
