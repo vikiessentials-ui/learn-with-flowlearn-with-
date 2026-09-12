@@ -1,0 +1,6 @@
+{
+  "name": "LEARN WITH FLOW",
+  "description": "World-class EdTech platform led by Founder & CEO Muhammad Talha, featuring a 1,000,000 course catalog, YouTube playlist integration, 80% assessment gating, and verifiable Coursera-style certificates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
